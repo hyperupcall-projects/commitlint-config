@@ -17,6 +17,10 @@
 		"types": "./index.d.ts",
 		"default": "./index.js"
 	},
+	"files": [
+		"./index.d.ts",
+		"./index.js"
+	],
 	"keywords": [
 		"commitlint",
 		"commitlint-config"
@@ -24,6 +28,9 @@
 	"scripts": {
 		"format": "hyperupcall-scripts-nodejs format",
 		"lint": "hyperupcall-scripts-nodejs lint"
+	},
+	"dependencies": {
+		"@commitlint/types": "21.2.3"
 	},
 	"devDependencies": {
 		"@hyperupcall/scripts-nodejs": "0.15.1"

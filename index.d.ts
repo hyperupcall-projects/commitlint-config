@@ -1,5 +1,3 @@
-declare const config: {
-	rules: Record<PropertyKey, unknown>
-}
-
+import type { UserConfig } from '@commitlint/types'
+declare const config: UserConfig
 export default config
