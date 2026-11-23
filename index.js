@@ -1,16 +1,17 @@
+/** @type {import('@commitlint/types').UserConfig} */
 export default {
 	rules: {
 		// https://commitlint.js.org/reference/rules.html#body-case
-		'body-case': [2, 'always', 'lower-case'],
+		'body-case': [0, 'always', ['lower-case']],
 
 		// https://commitlint.js.org/reference/rules.html#body-empty
-		'body-empty': [2, 'never'],
+		'body-empty': [0, 'never'],
 
 		// https://commitlint.js.org/reference/rules.html#body-full-stop
 		'body-full-stop': [2, 'never', '.'],
 
 		// https://commitlint.js.org/reference/rules.html#body-leading-blank
-		'body-leading-blank': [2, 'always'],
+		'body-leading-blank': [0, 'always'],
 
 		// https://commitlint.js.org/reference/rules.html#body-max-length
 		'body-max-length': [2, 'always', Infinity],
@@ -25,7 +26,7 @@ export default {
 		'breaking-change-exclamation-mark': [2, 'always'],
 
 		// https://commitlint.js.org/reference/rules.html#footer-empty
-		'footer-empty': [2, 'never'],
+		'footer-empty': [0, 'always'],
 
 		// https://commitlint.js.org/reference/rules.html#footer-leading-blank
 		'footer-leading-blank': [2, 'always'],
@@ -40,10 +41,11 @@ export default {
 		'footer-min-length': [2, 'always', 0],
 
 		// https://commitlint.js.org/reference/rules.html#header-breaking-change
-		'header-breaking-change': [2, 'never'],
+		// TODO: This was in docs but seemingly not implemented (threw error).
+		// 'header-breaking-change': [2, 'never'],
 
 		// https://commitlint.js.org/reference/rules.html#header-case
-		'header-case': [2, 'always', 'lower-case'],
+		'header-case': [2, 'never', []],
 
 		// https://commitlint.js.org/reference/rules.html#header-full-stop
 		'header-full-stop': [2, 'never', '.'],
@@ -58,7 +60,7 @@ export default {
 		'header-trim': [2, 'always'],
 
 		// https://commitlint.js.org/reference/rules.html#references-empty
-		'references-empty': [2, 'never'],
+		'references-empty': [2, 'always'],
 
 		// https://commitlint.js.org/reference/rules.html#scope-case
 		'scope-case': [2, 'always', 'lower-case'],
@@ -67,7 +69,7 @@ export default {
 		'scope-delimiter-style': [2, 'always', ['/', '\\', ',']],
 
 		// https://commitlint.js.org/reference/rules.html#scope-empty
-		// 'scope-empty': [2, 'never'],
+		'scope-empty': [0, 'never'],
 
 		// https://commitlint.js.org/reference/rules.html#scope-enum
 		'scope-enum': [2, 'always', []],
@@ -79,7 +81,7 @@ export default {
 		'scope-min-length': [2, 'always', 0],
 
 		// https://commitlint.js.org/reference/rules.html#signed-off-by
-		'signed-off-by': [2, 'always', 'Signed-off-by:'],
+		'signed-off-by': [0, 'always', ['Signed-off-by:']],
 
 		// https://commitlint.js.org/reference/rules.html#subject-case
 		'subject-case': [
@@ -104,32 +106,32 @@ export default {
 		'subject-min-length': [2, 'always', 0],
 
 		// https://commitlint.js.org/reference/rules.html#trailer-exists
-		'trailer-exists': [2, 'never', 'Signed-off-by:'],
+		'trailer-exists': [0, 'always', 'Signed-off-by:'],
 
 		// https://commitlint.js.org/reference/rules.html#type-case
 		'type-case': [2, 'always', 'lower-case'],
 
 		// https://commitlint.js.org/reference/rules.html#type-empty
-		// 'type-empty': [2, 'never'],
+		'type-empty': [0, 'never'],
 
 		// https://commitlint.js.org/reference/rules.html#type-enum
-		// 'type-enum': [
-		// 	2,
-		// 	'always',
-		// 	[
-		// 		'build',
-		// 		'chore',
-		// 		'ci',
-		// 		'docs',
-		// 		'feat',
-		// 		'fix',
-		// 		'perf',
-		// 		'refactor',
-		// 		'revert',
-		// 		'style',
-		// 		'test',
-		// 	],
-		// ],
+		'type-enum': [
+			0,
+			'always',
+			[
+				'build',
+				'chore',
+				'ci',
+				'docs',
+				'feat',
+				'fix',
+				'perf',
+				'refactor',
+				'revert',
+				'style',
+				'test',
+			],
+		],
 
 		// https://commitlint.js.org/reference/rules.html#type-max-length
 		'type-max-length': [2, 'always', Infinity],
