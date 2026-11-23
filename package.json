@@ -2,6 +2,14 @@
 	"name": "@hyperupcall/commitlint-config",
 	"version": "0.1.2",
 	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hyperupcall-projects/commitlint-config"
+	},
+	"bugs": {
+		"url": "https://github.com/hyperupcall-projects/commitlint-config/issues"
+	},
+	"author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
 	"license": "MPL-2.0",
 	"private": false,
 	"packageManager": "pnpm@12.21.0",
