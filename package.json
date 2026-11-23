@@ -1,6 +1,6 @@
 {
 	"name": "@hyperupcall/commitlint-config",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"type": "module",
 	"license": "MPL-2.0",
 	"private": false,
@@ -10,7 +10,8 @@
 		"default": "./index.js"
 	},
 	"keywords": [
-		"commitlint"
+		"commitlint",
+		"commitlint-config"
 	],
 	"scripts": {
 		"format": "hyperupcall-scripts-nodejs format",
