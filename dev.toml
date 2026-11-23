@@ -1,3 +1,0 @@
-[rules]
-"_/commitlint/commitlint-must-have-content" = "off"
-"_/commitlint/package-json-must-have-correct-shape" = "off"

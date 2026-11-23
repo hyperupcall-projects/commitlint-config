@@ -5,7 +5,7 @@ Edwin's [commitlint](https://commitlint.js.org) configuration.
 ## Install
 
 ```sh
-pnpm i -D @hyperupcall/commitlint-config
+pnpm i -D @commitlint/cli @hyperupcall/commitlint-config
 ```
 
 ## Usage

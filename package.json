@@ -12,7 +12,7 @@
 	"author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
 	"license": "MPL-2.0",
 	"private": false,
-	"packageManager": "pnpm@12.21.0",
+	"packageManager": "pnpm@12.23.0",
 	"exports": {
 		"types": "./index.d.ts",
 		"default": "./index.js"
@@ -33,13 +33,13 @@
 		"@commitlint/types": "21.2.3"
 	},
 	"devDependencies": {
-		"@hyperupcall/scripts-nodejs": "0.15.1"
+		"@hyperupcall/scripts-nodejs": "0.16.0"
 	},
 	"markdownlint-cli2": {
 		"extends": "./node_modules/@hyperupcall/scripts-nodejs/.markdownlint.mjs"
 	},
 	"npmpackagejsonlint": {
-		"extends": "@hyperupcall/scripts-nodejs/npmpackagejsonlint.config.js"
+		"extends": "@hyperupcall/scripts-nodejs/config-npmpackagejsonlint.js"
 	},
 	"prettier": "@hyperupcall/scripts-nodejs/config-prettier.js"
 }
