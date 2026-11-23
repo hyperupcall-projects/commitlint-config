@@ -1,0 +1,8 @@
+publicHoistPattern:
+  - 'prettier'
+  - 'eslint'
+  - '@commitlint/cli'
+minimumReleaseAgeExclude:
+  - '@hyperupcall/scripts-nodejs@0.15.1'
+  - '@hyperupcall/markdownlint-config@0.5.2'
+  - '@hyperupcall/npm-package-json-lint-config@0.2.0'
